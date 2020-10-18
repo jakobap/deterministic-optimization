@@ -25,5 +25,6 @@ exercise_2 <- function(S, pre = 1e-1, max_iter = 100){
   
   prob <- Problem(obj,constr)
   result <- solve(prob)
-  round(result$getValue(K),2)
+
+  return(list(result$solve_time, result$num_iters, round(result$getValue(K),2)))
 }

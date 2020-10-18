@@ -4,7 +4,7 @@ library(MASS)
 
 #set.seed(1)
 
-n <- 5     ## Dimension of matrix
+n <- 9     ## Dimension of matrix
 S <- matrix(rnorm(n*n), ncol=n)
 S <- S%*%t(S)
 
